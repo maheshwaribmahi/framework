@@ -13,7 +13,7 @@ public class ConfigDataProvider {
 			FileInputStream fis=new FileInputStream(src);
 			pro=new Properties();
 			pro.load(fis);
-		}
+		}//new commit
 		catch(Exception e)
 		{
 			System.out.println("not able to load config file>>"+e.getMessage());

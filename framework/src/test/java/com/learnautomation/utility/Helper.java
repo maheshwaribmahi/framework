@@ -15,7 +15,7 @@ public class Helper {
 	
 	//screenshot,alerts,frames,windows,sync issues,javascrip Executor
 public static String captureScreenshot(WebDriver driver)
-{
+{//new commit
 	
 	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	String screenshotPath=System.getProperty("user.dir")+"/Screenshots/actiTIME_"+Helper.getCurrentDateTime()+".png";//void previous for getting path secify retun type as string to avoid this define it

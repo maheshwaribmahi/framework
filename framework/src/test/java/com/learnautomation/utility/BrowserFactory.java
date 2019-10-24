@@ -16,7 +16,7 @@ public class BrowserFactory {
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equals("Firefox"))
-		{
+		{//new commit
 			System.setProperty("wedriver.gecko.driver", "./drivers/geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
