@@ -28,7 +28,7 @@ public class BaseClass {
 	
 	@BeforeSuite
 	public void setUpSuite() {
-		
+		//commit
 		Reporter.log("Setting up reports and Test is getting ready",true);//custom log its upto you  how you want
 		
 		excel=new ExcelDataProvider();//if u dont want create object again and again this engough ultimate goal is to get data from excel
