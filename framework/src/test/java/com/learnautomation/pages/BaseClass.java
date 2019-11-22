@@ -9,10 +9,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.beust.jcommander.Parameter;
 import com.learnautomation.utility.BrowserFactory;
 import com.learnautomation.utility.ConfigDataProvider;
 import com.learnautomation.utility.ExcelDataProvider;
@@ -42,17 +46,18 @@ public class BaseClass {
 		Reporter.log("Setting done-Test can be started",true);
 	}
 	
+	@Parameters({"browser","URLToBeTested"})
 	@BeforeClass
-	public void setUp() {
+	public void setUp(String browser,String URLToBeTested) {
 		Reporter.log("Trying to start browser and getting applicattion ready",true);//custom log its upto you  how you want
 		
 		
 		//excel=new ExcelDataProvider();//if u dont want create object again and again this engough ultimate goal is to get data from excel
 		//config=new ConfigDataProvider();
 		//driver=BrowserFactory.startApplication(driver,"Chrome", "https://demo.actitime.com");//hardcoding we can avoid this using config file 
-		driver=BrowserFactory.startApplication(driver,config.getBrowser(), config.getStagingURL());
+		driver=BrowserFactory.startApplication(driver,browser,URLToBeTested);
 		
-		Reporter.log("Browsr and application is up and running",true);//custom log its upto you  how you want
+		Reporter.log("Browser and application is up and running",true);//custom log its upto you  how you want
 	}
   
 	@AfterClass

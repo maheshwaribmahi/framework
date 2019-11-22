@@ -20,12 +20,12 @@
       <![CDATA[Test completed >>> Reports generated ]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="15831" started-at="2019-10-31T11:54:42Z" finished-at="2019-10-31T11:54:58Z">
+  <suite name="Default suite" duration-ms="25296" started-at="2019-11-05T07:30:32Z" finished-at="2019-11-05T07:30:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="15831" started-at="2019-10-31T11:54:42Z" finished-at="2019-10-31T11:54:58Z">
+    <test name="Default test" duration-ms="25296" started-at="2019-11-05T07:30:32Z" finished-at="2019-11-05T07:30:57Z">
       <class name="com.learnautomation.testcases.LoginTestCRM">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="setUpSuite" is-config="true" duration-ms="698" started-at="2019-10-31T17:24:42Z" finished-at="2019-10-31T17:24:42Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="setUpSuite" is-config="true" duration-ms="1039" started-at="2019-11-05T13:00:31Z" finished-at="2019-11-05T13:00:32Z">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is getting ready]]>
@@ -35,7 +35,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="setUp" is-config="true" duration-ms="11207" started-at="2019-10-31T17:24:42Z" finished-at="2019-10-31T17:24:54Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="setUp" is-config="true" duration-ms="13820" started-at="2019-11-05T13:00:32Z" finished-at="2019-11-05T13:00:45Z">
           <reporter-output>
             <line>
               <![CDATA[Trying to start browser and getting applicattion ready]]>
@@ -45,11 +45,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="loginApp" duration-ms="2402" started-at="2019-10-31T17:24:54Z" finished-at="2019-10-31T17:24:56Z">
+        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="loginApp" duration-ms="2376" started-at="2019-11-05T13:00:45Z" finished-at="2019-11-05T13:00:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="tearDownMethod" is-config="true" duration-ms="995" started-at="2019-10-31T17:24:56Z" finished-at="2019-10-31T17:24:57Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="tearDownMethod" is-config="true" duration-ms="8069" started-at="2019-11-05T13:00:48Z" finished-at="2019-11-05T13:00:56Z">
           <params>
             <param index="0">
               <value>
@@ -66,11 +66,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="tearDown" is-config="true" duration-ms="1206" started-at="2019-10-31T17:24:57Z" finished-at="2019-10-31T17:24:58Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@6767c1fc]" name="tearDown" is-config="true" duration-ms="1007" started-at="2019-11-05T13:00:56Z" finished-at="2019-11-05T13:00:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.learnautomation.testcases.LoginTestCRM -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

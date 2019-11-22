@@ -21,7 +21,7 @@ public class LoginTestCRM extends BaseClass{
 	//}//if ther are mutiple test scenarios if ther are 50 test case icant copy every time this befor classs and after class code its not a good approach its a code duplication once we gor for maintainne it will be difficult for maintainanace so we cme with base class it contains all the methods of precondition and post condition  required for each and every test cases		
 	@Test
 	public void loginApp()
-	{//new commit
+	{
 		logger=report.createTest("Login to actiTIME");//logger responsible for all logging activity in test //have logger.info 
 		//ExcelDataProvider excel=new ExcelDataProvider();                                
 		//driver=BrowserFactory.startApplication(driver,"Chrome", "https://demo.actitime.com");//
