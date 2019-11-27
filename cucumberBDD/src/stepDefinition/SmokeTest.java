@@ -1,7 +1,9 @@
 package stepDefinition;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.Given;
@@ -15,18 +17,21 @@ public class SmokeTest {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 	   driver=new ChromeDriver();
 	   driver.manage().window().maximize();
-	   driver.get("https://github.com");
+	   driver.get("https://www.gmail.com");
 	}
-	@When("^I enter valid username and valid password$")
-	public void I_enter_valid_username_and_valid_password() throws Throwable {
-	  //driver.findElement(By.id("user[login]")).sendKeys("maheshwarib83");
-	  //driver.findElement(By.id("user[email]")).sendKeys("maheshwarib83@gmail.com");
-	  //driver.findElement(By.name("user[password]")).sendKeys("Mahi@1992&");    
-		driver.findElement(By.id("user[email]")).sendKeys("maheshwarib83@gmail.com");
+	@When("^I enter valid \"([^\"]*)\" and valid \"([^\"]*)\"$")
+	public void I_enter_valid_username_and_valid_password(String username,String password) throws Throwable {
+	  driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys(username);
+	  Thread.sleep(5000);
+	  driver.findElement(By.xpath("//span[text()='Next']")).click();
+	  Thread.sleep(5000);
+	  driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);   
+	  Thread.sleep(5000);
+	  driver.findElement(By.xpath("//span[text()='Next']")).click();
 	}
 	@Then("^user should be able to login successfully$")
 	public void user_should_be_able_to_login_successfully() throws Throwable {
-		driver.findElement(By.xpath("//button[text()='Sign up for GitHub']")).click();  
+	System.out.println("user should be able to login successfully");
 	 
 	}
 }
